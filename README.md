@@ -5,18 +5,16 @@ Analyzing Ola ride data to uncover trends in bookings, cancellations, customer b
 ---
 
 ## 📌 Table of Contents
-- [Overview](#Overview)  
-- [Business Problem](#Business-Problem)  
-- [Dataset](#Dataset)  
-- [Tools & Technologies](#tools--technologies)  
-- [Project Structure](#project-structure)  
-- [Data Cleaning & Preparation](#data-cleaning--preparation)  
-- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)  
-- [Research Questions & Key Findings](#research-questions--key-findings)  
-- [Dashboard](#dashboard)  
-- [How to Run This Project](#how-to-run-this-project)  
-- [Final Recommendations](#final-recommendations)  
-- [Author & Contact](#author--contact)  
+- [Overview](#-overview)  
+- [Business Problem](#-business-problem)  
+- [Dataset](#-dataset)  
+- [Tools & Technologies](#-tools--technologies)  
+- [Data Cleaning & Preparation](#-data-cleaning--preparation)  
+- [Exploratory Data Analysis (EDA)](#-exploratory-data-analysis-eda)  
+- [Research Questions & Key Findings](#-research-questions--key-findings)  
+- [Dashboard](#-dashboard)  
+- [Final Recommendations](#-final-recommendations)  
+- [Author & Contact](#-author--contact)  
 
 ---
 
@@ -47,21 +45,6 @@ This project aims to:
 - **Power BI** (Data Modeling, DAX, Interactive Dashboards)  
 - **Excel/CSV** (Data Source)  
 - **GitHub** (Project Hosting & Documentation)  
-
----
-
-## 📁 Project Structure  
-ola-rides-analysis/
-│
-├── README.md
-├── ola_rides_report.pdf
-│
-├── dashboard/ # Power BI Dashboard
-│ └── ola_rides_dashboard.pbix
-│
-├── data/ # Raw & cleaned datasets
-│ └── ola_rides_july2024.csv
-
 
 ---
 
@@ -111,26 +94,21 @@ The Power BI dashboard provides:
 
 ---
 
-## ⚡ How to Run This Project  
-1. Clone the repository:  
-2. Open dataset from /data/ in Power BI.
-3. Load measures & visualizations.
-4. Open the .pbix file in Power BI Desktop.
-5. Explore the dashboard for insights.
+## ✅ Final Recommendations  
+- **Optimize driver allocation** in high-demand zones to reduce cancellations  
+- **Improve cancellation policies** to minimize customer dissatisfaction  
+- **Promote digital payments** with cashback/discounts to reduce cash dependency  
+- **Loyalty programs** for high-value customers  
+- **Regular driver training & rating monitoring** to sustain customer trust  
 
 ---
 
-## ✅ Final Recommendations
-Optimize driver allocation in high-demand zones to reduce cancellations
-Improve cancellation policies to minimize customer dissatisfaction
-Promote digital payments with cashback/discounts to reduce cash dependency
-Loyalty programs for high-value customers
-Regular driver training & rating monitoring to sustain customer trust
+## 👤 Author & Contact  
+**Ankit Kumar**  
+
+📧 Email: **ankitbaech@gmail.com**  
+🔗 [LinkedIn](https://www.linkedin.com/in/ankitsign)  
+🔗 [Portfolio](https://github.com/MrAnkitk)  
+🔗 [Instagram](https://instagram.com/ankittsign)  
 
 ---
-
-## 👤 Author & Contact
-Ankit Kumar
-📧 Email: ankitbaech@gmail.com
-🔗 LinkedIn (#https://www.linkedin.com/in/ankitsign)
-🔗 Portfolio (#https://github.com/MrAnkitk)
