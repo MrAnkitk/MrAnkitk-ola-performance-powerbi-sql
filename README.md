@@ -1,148 +1,136 @@
-🚖 Ola Rides Analysis – Power BI Dashboard
+# 🚖 Ola Rides Analysis – Power BI Dashboard  
 
-Analyzing ride patterns, cancellations, payments, and customer behavior from Ola ride-hailing data (July 2024). This project demonstrates how data visualization + business intelligence can uncover insights to improve operations and customer experience.
+Analyzing Ola ride data to uncover trends in bookings, cancellations, customer behavior, payment methods, and ride performance using **Power BI**.  
 
-📌 Table of Contents
+---
 
-Overview
-Business Problem
-Dataset
-Tools & Technologies
-Project Structure
-Data Cleaning & Preparation
-Exploratory Data Analysis (EDA)
-Research Questions & Key Findings
-Dashboard
-How to Run This Project
-Final Recommendations
-Author & Contact
+## 📌 Table of Contents
+- [Overview](#overview)  
+- [Business Problem](#business-problem)  
+- [Dataset](#dataset)  
+- [Tools & Technologies](#tools--technologies)  
+- [Project Structure](#project-structure)  
+- [Data Cleaning & Preparation](#data-cleaning--preparation)  
+- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)  
+- [Research Questions & Key Findings](#research-questions--key-findings)  
+- [Dashboard](#dashboard)  
+- [How to Run This Project](#how-to-run-this-project)  
+- [Final Recommendations](#final-recommendations)  
+- [Author & Contact](#author--contact)  
 
-📝 Overview
-This project evaluates ride bookings, cancellations, payment methods, and customer loyalty for Ola. The analysis highlights areas to improve driver allocation, reduce cancellations, and strengthen customer satisfaction.
+---
 
-A complete workflow was developed using Power BI for dashboarding and insights storytelling.
+## 🔎 Overview  
+This project evaluates **ride-hailing operations for Ola** during July 2024. The goal was to identify booking trends, cancellation patterns, revenue distribution, and customer loyalty. The analysis provides actionable insights for **improving ride success rates, reducing cancellations, and enhancing customer experience**.  
 
-❓ Business Problem
+---
 
-Ride-hailing companies face challenges like high cancellations, unreliable drivers, and fragmented payment adoption. This project answers:
+## 💼 Business Problem  
+Ride-hailing companies face challenges with **high cancellation rates, inconsistent driver availability, and changing customer preferences**.  
+This project aims to:  
+- Analyze booking success vs cancellation trends  
+- Identify **top cancellation reasons** (drivers vs customers)  
+- Study **payment method preferences**  
+- Highlight **high-value customers** for loyalty strategies  
+- Track **driver ratings & ride distance trends**  
 
-What % of rides end successfully vs cancelled?
+---
 
-What are the top cancellation reasons (driver vs customer)?
+## 📂 Dataset  
+- Period: **01 July 2024 – 30 July 2024**  
+- Columns: Booking ID, Booking Status, Payment Method, Ride Distance, Booking Value, Customer ID, Driver Ratings, Cancellation Reasons  
+- Total Records: **40,539 bookings**  
 
-Which payment methods contribute most to revenue?
+---
 
-Who are the top customers driving loyalty and repeat bookings?
+## 🛠 Tools & Technologies  
+- **Power BI** (Data Modeling, DAX, Interactive Dashboards)  
+- **Excel/CSV** (Data Source)  
+- **GitHub** (Project Hosting & Documentation)  
 
-How stable are driver ratings across the month?
+---
 
-📂 Dataset
-
-Period: 01 July – 30 July 2024
-
-Total Bookings: 40,539
-
-Total Revenue: ₹14M
-
-Fields include: Booking ID, Booking Status, Payment Method, Ride Distance, Customer ID, Driver Rating, etc.
-
-🛠 Tools & Technologies
-
-Power BI (DAX, Data Modeling, Dashboards)
-
-Excel/CSV (Raw Data Source)
-
-GitHub (Project Repository & Documentation)
-
-📁 Project Structure
+## 📁 Project Structure  
 ola-rides-analysis/
 │
 ├── README.md
-├── ola-rides-report.pdf           # Project summary report
-├── dashboard/                     # Power BI Dashboard
-│   └── ola_rides_dashboard.pbix
-├── data/                          # Sample dataset (if shareable)
-└── images/                        # Screenshots of dashboard visuals
-
-🧹 Data Cleaning & Preparation
-
-Removed duplicate bookings and null values
-
-Standardized date & time format
-
-Categorized booking status into Success, Cancelled by Driver, Cancelled by Customer, Driver Not Found
-
-Calculated KPIs: Success Rate, Cancellation Rate, Avg Rating, Revenue per Customer
-
-🔎 Exploratory Data Analysis (EDA)
-
-Booking Status Distribution
-
-Revenue by Payment Method
-
-Ride Distance Patterns over time
-
-Top Customers by Value
-
-Driver & Customer cancellation reasons
-
-📊 Research Questions & Key Findings
-
-1️⃣ Total Bookings – 40,539 | Revenue – ₹14M
-2️⃣ Booking Status – 62% Success | 28% Cancelled | 10% Driver Not Found
-3️⃣ Cancellations – Driven by driver personal issues & customer plan changes
-4️⃣ Payments – UPI & Credit Cards dominate, Cash still significant
-5️⃣ Top Customers – 5 customers alone contributed ~₹19.5K
-6️⃣ Ratings – Stable at ~4.0 → indicates reliable service perception
-
-📊 Dashboard
-
-The Power BI dashboard provides:
-
-Booking Status Overview
-
-Cancellation Breakdown (Driver vs Customer)
-
-Revenue by Payment Method
-
-Ride Distance Trends
-
-Top Customers & Loyalty Indicators
-
-Driver Ratings over time
-
-📸 (Add dashboard screenshots here from /images)
-
-▶️ How to Run This Project
-
-Clone the repository:
-
-git clone https://github.com/yourusername/ola-rides-analysis.git
+├── ola_rides_report.pdf
+│
+├── dashboard/ # Power BI Dashboard
+│ └── ola_rides_dashboard.pbix
+│
+├── data/ # Raw & cleaned datasets
+│ └── ola_rides_july2024.csv
 
 
-Open the dashboard file:
+---
 
-dashboard/ola_rides_dashboard.pbix
+## 🧹 Data Cleaning & Preparation  
+- Removed missing or duplicate booking IDs  
+- Standardized payment method categories  
+- Created calculated measures in Power BI:  
+  - **Success Rate**  
+  - **Cancellation Rate**  
+  - **Revenue per Payment Method**  
+  - **Top Customer Contribution**  
 
+---
 
-Explore filters, slicers, and KPIs in Power BI Desktop.
+## 📊 Exploratory Data Analysis (EDA)  
+- **Booking Trends:** Ride volumes fluctuated by weekday/weekend  
+- **Cancellation Analysis:** Both driver-initiated & customer-initiated cancellations studied  
+- **Revenue Analysis:** UPI & Credit Cards contributed the highest share  
+- **Customer Behavior:** Top 5 customers generated ~19.5K in booking value  
+- **Driver Ratings:** Maintained an average ~4.0 throughout the period  
 
-✅ Final Recommendations
+---
 
-Driver Allocation – Address frequent cancellation reasons with better driver management
+## ❓ Research Questions & Key Findings  
+1️⃣ What % of rides were successful? → **62% Success Rate**  
+2️⃣ How often do cancellations occur? → **~28% rides cancelled**  
+3️⃣ Who cancels more, drivers or customers? → Almost equal split (slightly higher driver-related)  
+4️⃣ Which payment method dominates? → **UPI & Credit Cards**  
+5️⃣ Who are the top customers? → 5 customers contributed significantly (~19.5K booking value)  
+6️⃣ What are the top cancellation reasons?  
+   - Driver personal issues  
+   - Customer plan changes  
+   - Driver not moving towards pickup  
+   - Wrong address/AC not working  
 
-Customer Loyalty – Reward top customers through targeted offers
+---
 
-Payments – Promote digital payments to reduce cash dependency
+## 📈 Dashboard  
+The Power BI dashboard provides:  
+- Ride Volume Over Time  
+- Booking Status Breakdown  
+- Cancelled Rides (Drivers vs Customers)  
+- Revenue by Payment Method  
+- Ride Distance Distribution  
+- Top Customers by Booking Value  
+- Driver Ratings Trends  
 
-Cancellation Reduction – Improve real-time driver tracking and customer communication
+---
 
-Operational Insights – Use data to optimize ride distribution during weekends & peak hours
+## ⚡ How to Run This Project  
+1. Clone the repository:  
+2. Open dataset from /data/ in Power BI.
+3. Load measures & visualizations.
+4. Open the .pbix file in Power BI Desktop.
+5. Explore the dashboard for insights.
 
-👤 Author & Contact
+---
 
+## ✅ Final Recommendations
+Optimize driver allocation in high-demand zones to reduce cancellations
+Improve cancellation policies to minimize customer dissatisfaction
+Promote digital payments with cashback/discounts to reduce cash dependency
+Loyalty programs for high-value customers
+Regular driver training & rating monitoring to sustain customer trust
+
+---
+
+## 👤 Author & Contact
 Ankit Kumar
-Data Analyst | Power BI Developer
-📧 Email: (Add your email)
-🔗 [LinkedIn](Add your link)
-🔗 [Portfolio / GitHub](Add link)
+📧 Email: ankitbaech@gmail.com
+🔗 LinkedIn
+🔗 Portfolio
