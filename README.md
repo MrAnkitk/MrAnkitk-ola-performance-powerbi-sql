@@ -5,9 +5,9 @@ Analyzing Ola ride data to uncover trends in bookings, cancellations, customer b
 ---
 
 ## 📌 Table of Contents
-- [Overview](#overview)  
-- [Business Problem](#business-problem)  
-- [Dataset](#dataset)  
+- [Overview](#Overview)  
+- [Business Problem](#Business-Problem)  
+- [Dataset](#Dataset)  
 - [Tools & Technologies](#tools--technologies)  
 - [Project Structure](#project-structure)  
 - [Data Cleaning & Preparation](#data-cleaning--preparation)  
@@ -132,5 +132,5 @@ Regular driver training & rating monitoring to sustain customer trust
 ## 👤 Author & Contact
 Ankit Kumar
 📧 Email: ankitbaech@gmail.com
-🔗 LinkedIn
-🔗 Portfolio
+🔗 LinkedIn (#https://www.linkedin.com/in/ankitsign)
+🔗 Portfolio (#https://github.com/MrAnkitk)
